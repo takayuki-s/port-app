@@ -3,10 +3,11 @@ import PropTypes from "prop-types"
 class Port extends React.Component {
   render () {
     return (
-      <React.Fragment>
+      <div>
         Greeting: {this.props.greeting}
-        
-      </React.Fragment>
+        <p>テストです！</p>
+        <p>divで囲むと２つ以上の要素を表示できます！</p>
+      </div>
     );
   }
 }
