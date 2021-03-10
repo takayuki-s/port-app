@@ -1,12 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
+
 class Port extends React.Component {
   render () {
     return (
-      <div>
+      <div className="box">
         Greeting: {this.props.greeting}
         <p>テストです！</p>
         <p>divで囲むと２つ以上の要素を表示できます！</p>
+        <hr/>
       </div>
     );
   }
