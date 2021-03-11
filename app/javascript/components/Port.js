@@ -3,6 +3,9 @@ import PropTypes from "prop-types"
 function showHello() {
   alert('Hello')
 }
+function Counter(props) {
+  return <div>0 {props.type}</div>
+}
 
 class Port extends React.Component {
   render () {
@@ -11,6 +14,9 @@ class Port extends React.Component {
         Greeting: {this.props.greeting}
         <p>テストです！</p>
         <p>divで囲むと２つ以上の要素を表示できます！</p>
+        <Counter type="one"/>
+        <Counter type="two"/>
+        <Counter type="three"/>
         <hr/>
         
       </div>
