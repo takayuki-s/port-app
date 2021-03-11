@@ -4,19 +4,21 @@ function showHello() {
   alert('Hello')
 }
 function Counter(props) {
-  return <div>0 {props.type}</div>
+  return <li style={{backgroundColor:props.type}}>0</li>
 }
 
 class Port extends React.Component {
   render () {
     return (
-      <div className="box" onClick={showHello}>
+      <div className="container" onClick={showHello}>
         Greeting: {this.props.greeting}
         <p>テストです！</p>
         <p>divで囲むと２つ以上の要素を表示できます！</p>
-        <Counter type="one"/>
-        <Counter type="two"/>
-        <Counter type="three"/>
+        <ul>
+          <Counter type="tomato"/>
+          <Counter type="skyblue"/>
+          <Counter type="limegreen"/>
+        </ul>
         <hr/>
         
       </div>
