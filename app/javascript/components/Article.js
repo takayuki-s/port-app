@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 const Article = (props) => {
   return (
     <div>
-      <h2>リアクトコンポーネントの使用テスト</h2>
+      <h2>リアクトコンポーネントのprops受け渡しテスト</h2>
     </div>
   );
 }
