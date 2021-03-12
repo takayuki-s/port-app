@@ -1,11 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
+
+
 class Blog extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render () {
     return (
-      <React.Fragment>
-        コンポーネント作成テスト
-      </React.Fragment>
+      <div>
+        ２つ目コンポーネントテスト
+        {/* <Article /> */}
+      </div>
     );
   }
 }
