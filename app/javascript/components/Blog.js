@@ -8,10 +8,16 @@ class Blog extends React.Component {
   }
 
   render () {
+    const authorName = "TekeTECH"
     return (
       <div>
         ２つ目コンポーネントテスト
-        <Article title={"データ受け渡しテスト"} />
+        <Article 
+          title={"データ受け渡しテスト"} 
+          num={5}
+          isPublished={true}
+          author={authorName}
+        />
       </div>
     );
   }
