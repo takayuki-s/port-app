@@ -11,7 +11,7 @@ class Blog extends React.Component {
     return (
       <div>
         ２つ目コンポーネントテスト
-        <Article />
+        <Article title={"データ受け渡しテスト"} />
       </div>
     );
   }
