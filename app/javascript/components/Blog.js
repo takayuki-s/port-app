@@ -18,6 +18,7 @@ class Blog extends React.Component {
           isPublished={true}
           author={authorName}
         />
+        <Article title={"コンポーネント再利用"} />
       </div>
     );
   }
