@@ -17,6 +17,8 @@ const Article = (props) => {
       <p>数字は{props.num}です</p>
       <p>著者は{props.author}です</p>
       <p>{publishState}</p>
+      <label htmlFor="check">公開状況：</label>
+      <input type="checkbox" checked={props.isPublished} id="check"/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ class Blog extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isPublished: true
+      isPublished: false
     }
   }
 
@@ -17,7 +17,6 @@ class Blog extends React.Component {
         ２つ目コンポーネントテスト
         <Article 
           title={"データ受け渡しテスト"} 
-          
           isPublished={this.state.isPublished}
           // num={5}
           // isPublished={true}
