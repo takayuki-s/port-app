@@ -5,6 +5,9 @@ import Article from "./Article"
 class Blog extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isPublished: true
+    }
   }
 
   render () {
@@ -14,14 +17,16 @@ class Blog extends React.Component {
         ２つ目コンポーネントテスト
         <Article 
           title={"データ受け渡しテスト"} 
-          num={5}
-          isPublished={true}
-          author={authorName}
+          
+          isPublished={this.state.isPublished}
+          // num={5}
+          // isPublished={true}
+          // author={authorName}
         />
-        <Article 
+        {/* <Article 
           title={"コンポーネント再利用"}
           number={7}
-          />
+          /> */}
       </div>
     );
   }
