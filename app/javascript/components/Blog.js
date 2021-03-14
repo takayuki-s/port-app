@@ -10,6 +10,12 @@ class Blog extends React.Component {
     }
   }
 
+  togglePublished = () => {
+    this.setState( {
+      isPublished: !this.state.isPublished
+    })
+  };
+
   render () {
     const authorName = "TekeTECH"
     return (
@@ -18,6 +24,7 @@ class Blog extends React.Component {
         <Article 
           title={"データ受け渡しテスト"} 
           isPublished={this.state.isPublished}
+          toggle={() => this.togglePublished()}
           // num={5}
           // isPublished={true}
           // author={authorName}
