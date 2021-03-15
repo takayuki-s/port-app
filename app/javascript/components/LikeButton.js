@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 const LikeButton = (props) => {
   return (
-    <button>いいねの数：{props.count}</button>
+    <button id={"counter"}>いいねの数：{props.count}</button>
   )
 }
 

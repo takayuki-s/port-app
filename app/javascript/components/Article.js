@@ -20,7 +20,7 @@ const Article = (props) => {
       <p>{publishState}</p>
       <label htmlFor="check">公開状況：</label>
       <input type="checkbox"  id="check" onClick={() => props.toggle()}/>
-      <br/>
+      <br/><br/>
       <LikeButton count={props.count}/>
     </div>
   );
