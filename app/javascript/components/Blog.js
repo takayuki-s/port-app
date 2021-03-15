@@ -15,6 +15,12 @@ class Blog extends React.Component {
     document.getElementById("counter").addEventListener("click", this.countUp)
   }
 
+  componentDidUpdate() {
+    if (this.state.count >= 10) {
+      this.setState({count: 0})
+    }
+  };
+
   togglePublished = () => {
     this.setState( {
       isPublished: !this.state.isPublished
