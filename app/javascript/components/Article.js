@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import LikeButton from "./LikeButton"
 
 const Article = (props) => {
   let publishState = ""
@@ -19,6 +20,8 @@ const Article = (props) => {
       <p>{publishState}</p>
       <label htmlFor="check">公開状況：</label>
       <input type="checkbox"  id="check" onClick={() => props.toggle()}/>
+      <br/>
+      <LikeButton count={props.count}/>
     </div>
   );
 }
