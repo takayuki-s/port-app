@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Article from "./Article"
-import {Foo, Bar} from "./FooBar"
+import * as FooBar from "./FooBar"
 import Hoge from "./Hoge"
 
 class Blog extends React.Component {
@@ -53,8 +53,8 @@ class Blog extends React.Component {
           // isPublished={true}
           // author={authorName}
         />
-        <Foo />
-        <Bar />
+        <FooBar.Foo />
+        <FooBar.Bar />
         <Hoge />
         {/* <Article 
           title={"コンポーネント再利用"}
