@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Article from "./Article"
+import {Foo, Bar} from "./FooBar"
+import Hoge from "./Hoge"
 
 class Blog extends React.Component {
   constructor(props) {
@@ -51,6 +53,9 @@ class Blog extends React.Component {
           // isPublished={true}
           // author={authorName}
         />
+        <Foo />
+        <Bar />
+        <Hoge />
         {/* <Article 
           title={"コンポーネント再利用"}
           number={7}
