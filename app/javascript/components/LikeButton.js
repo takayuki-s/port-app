@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 
 const LikeButton = () => {
   const [count, counter] = useState(0);
+  const[limit, release] = useState(true);
 
   const countUp = () => {
     counter(count + 1)
@@ -16,10 +17,13 @@ const LikeButton = () => {
     return () => {
       document.getElementById("counter").removeEventListener("click", countUp)
     }
-  });
+  }, [limit]);
 
   return (
-    <button id={"counter"}>いいねの数：{count}</button>
+    <>
+      <button id={"counter"}>いいねの数：{count}</button>
+      <button onClick={() => release(!limit)}>もっといいね</button>
+    </>
   )
 };
 

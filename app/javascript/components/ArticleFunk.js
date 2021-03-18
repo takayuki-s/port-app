@@ -22,7 +22,7 @@ const ArticleFunk = (props) => {
       <label htmlFor="check">公開状況：</label>
       <input type="checkbox" defaultChecked={isPublished} id="check" onClick={() => togglePublished(!isPublished)}/>
       <br/><br/>
-      <LikeButton count={props.count}/>
+      <LikeButton />
     </div>
   );
 }
