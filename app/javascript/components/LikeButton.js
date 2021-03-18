@@ -7,13 +7,12 @@ const LikeButton = () => {
 
   const countUp = () => {
     counter(count + 1)
+    if (count >= 10) {
+      counter(0)}
   }
 
   useEffect ( () => {
     document.getElementById("counter").addEventListener("click", countUp)
-    if (count >= 10) {
-      counter(0)
-    }
     return () => {
       document.getElementById("counter").removeEventListener("click", countUp)
     }
