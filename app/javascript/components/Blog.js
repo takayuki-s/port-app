@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import Article from "./Article"
 import * as FooBar from "./FooBar"
 import Hoge from "./Hoge"
+import ArticleFunk from "./ArticleFunk"
 
 class Blog extends React.Component {
   constructor(props) {
@@ -60,6 +61,7 @@ class Blog extends React.Component {
           title={"コンポーネント再利用"}
           number={7}
           /> */}
+        <ArticleFunk />
       </div>
     );
   }
