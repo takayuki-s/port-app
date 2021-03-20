@@ -7,34 +7,29 @@
   <aside>ad</aside>
 </section>
 
-<div class="grid-box">
+<!--
+576px and up: sm
+768px and up: md
+992px and up: lg
+1200px and up: xl
+-->
+
+<div class="container">
   <div class="row">
-    <div class="col bg-primary">1</div>
-    <div class="col bg-secondary">2</div>
-    <div class="col bg-info">3</div>
+    <div class="col-10 bg-primary">1</div>
+    <div class="col-2 bg-secondary">2</div>
   </div>
   <div class="row">
-    <div class="col bg-danger">1</div>
-    <div class="col bg-warning">2</div>
-    <div class="col bg-dark">3</div>
+    <div class="col-10 col-md-2 bg-primary">1</div>
+    <div class="col-2 col-md-10 bg-secondary">2</div>
   </div>
   <div class="row">
-    <div class="col-8 bg-primary">1</div>
-    <div class="col-4 bg-secondary">2</div>
+    <div class="col-10 col-md-2 bg-primary">1</div>
+    <div class="col-2 d-md-none col-md-10 bg-secondary">2</div>
   </div>
   <div class="row">
-    <div class="col-4 bg-danger">1</div>
-    <div class="col-6 bg-warning">2</div>
-    <div class="col-2 bg-dark">3</div>
-  </div>
-  <div class="row">
-    <div class="col-1 bg-primary">1</div>
-    <div class="col-6 bg-secondary">2</div>
-  </div>
-  <div class="row">
-    <div class="col-4 bg-danger">1</div>
-    <div class="col-6 bg-warning">2</div>
-    <div class="col-6 bg-dark">3</div>
+    <div class="col-2 col-md-10 bg-primary">1</div>
+    <div class="d-none d-md-block col-2 bg-secondary">2</div>
   </div>
 </div>
 
