@@ -10,7 +10,13 @@ body {
 }
 
 .cover {
-  background-image: image-url('bg.png');
+  background-image: image-url('back.png');
+  background-size: cover;
+}
+
+.demo {
+  background-image: image-url('demo.gif');
+  height: 300px;
   background-size: cover;
 }
 
